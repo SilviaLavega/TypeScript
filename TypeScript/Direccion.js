@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Direccion = void 0;
-var Direccion = /** @class */ (function () {
+class Direccion {
     //Constructor de Direccion
-    function Direccion(calle, numero, piso, letra, codigoPostal, poblacion, provincia) {
+    constructor(calle, numero, piso, letra, codigoPostal, poblacion, provincia) {
         this._calle = calle;
         this._numero = numero;
         this._piso = piso;
@@ -12,77 +12,48 @@ var Direccion = /** @class */ (function () {
         this._poblacion = poblacion;
         this._provincia = provincia;
     }
-    Object.defineProperty(Direccion.prototype, "calle", {
-        //Get y set de cada variable
-        get: function () {
-            return this._calle;
-        },
-        set: function (value) {
-            this._calle = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "numero", {
-        get: function () {
-            return this._numero;
-        },
-        set: function (value) {
-            this._numero = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "piso", {
-        get: function () {
-            return this._piso;
-        },
-        set: function (value) {
-            this._piso = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "letra", {
-        get: function () {
-            return this._letra;
-        },
-        set: function (value) {
-            this._letra = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "codigoPostal", {
-        get: function () {
-            return this._codigoPostal;
-        },
-        set: function (value) {
-            this._codigoPostal = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "poblacion", {
-        get: function () {
-            return this._poblacion;
-        },
-        set: function (value) {
-            this._poblacion = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Direccion.prototype, "provincia", {
-        get: function () {
-            return this._provincia;
-        },
-        set: function (value) {
-            this._provincia = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Direccion;
-}());
+    //Get y set de cada variable
+    get calle() {
+        return this._calle;
+    }
+    set calle(value) {
+        this._calle = value;
+    }
+    get numero() {
+        return this._numero;
+    }
+    set numero(value) {
+        this._numero = value;
+    }
+    get piso() {
+        return this._piso;
+    }
+    set piso(value) {
+        this._piso = value;
+    }
+    get letra() {
+        return this._letra;
+    }
+    set letra(value) {
+        this._letra = value;
+    }
+    get codigoPostal() {
+        return this._codigoPostal;
+    }
+    set codigoPostal(value) {
+        this._codigoPostal = value;
+    }
+    get poblacion() {
+        return this._poblacion;
+    }
+    set poblacion(value) {
+        this._poblacion = value;
+    }
+    get provincia() {
+        return this._provincia;
+    }
+    set provincia(value) {
+        this._provincia = value;
+    }
+}
 exports.Direccion = Direccion;

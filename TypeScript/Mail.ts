@@ -11,7 +11,7 @@ export class Mail {
     private _Direccion: String;
 
     //Creacion del constructor
-    constructor(Tipo, Direccion) {
+    constructor(Tipo:TipoMail, Direccion:String) {
         this._Direccion = Direccion;
         this._Tipo = Tipo;
     }

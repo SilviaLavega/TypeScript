@@ -34,17 +34,17 @@ export class Persona {
         notas: String[] 
     )
      {
-        this.nombre = nombre
-        this.apellidos = apellidos
-        this.dni = dni
-        this.cumpleanos = cumpleanos
-        this.edad = edad
-        this.colorFavorito = colorFavorito
-        this.sexo = sexo
-        this.direcciones = direcciones
-        this.mails = mails
-        this.telefonos = telefonos
-        this.notas = notas
+        this._nombre = nombre
+        this._apellidos = apellidos
+        this._dni = dni
+        this._cumpleanos = cumpleanos
+        this._edad = edad
+        this._colorFavorito = colorFavorito
+        this._sexo = sexo
+        this._direcciones = direcciones
+        this._mails = mails
+        this._telefonos = telefonos
+        this._notas = notas
     } 
 
     //get y set de las variables

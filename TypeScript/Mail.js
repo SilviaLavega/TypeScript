@@ -8,33 +8,24 @@ var TipoMail;
     TipoMail["hotmail"] = "hotmail";
     TipoMail["outlook"] = "outlook";
 })(TipoMail || (exports.TipoMail = TipoMail = {}));
-var Mail = /** @class */ (function () {
+class Mail {
     //Creacion del constructor
-    function Mail(Tipo, Direccion) {
+    constructor(Tipo, Direccion) {
         this._Direccion = Direccion;
         this._Tipo = Tipo;
     }
-    Object.defineProperty(Mail.prototype, "Tipo", {
-        //Creacion de los set y get de las varibles
-        get: function () {
-            return this._Tipo;
-        },
-        set: function (value) {
-            this._Tipo = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Mail.prototype, "Direccion", {
-        get: function () {
-            return this._Direccion;
-        },
-        set: function (value) {
-            this._Direccion = value;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Mail;
-}());
+    //Creacion de los set y get de las varibles
+    get Tipo() {
+        return this._Tipo;
+    }
+    set Tipo(value) {
+        this._Tipo = value;
+    }
+    get Direccion() {
+        return this._Direccion;
+    }
+    set Direccion(value) {
+        this._Direccion = value;
+    }
+}
 exports.Mail = Mail;

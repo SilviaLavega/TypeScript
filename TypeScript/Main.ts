@@ -1,5 +1,5 @@
 import { Telefono } from './Telefono';
-import { Mail } from './Mail';
+import { Mail, TipoMail } from './Mail';
 import { Direccion } from './Direccion';
 import { Persona } from './Persona';
 
@@ -14,7 +14,7 @@ const persona1: Persona = new Persona (
     'Naranja',
     'masculino',
     [new Direccion('calle',15,2,'B',50002,'Paseo Independencia','Zaragoza')],
-    [new Mail('Miguelmartin@gmail.com','persona1')],
+    [new Mail(TipoMail.gmail,'Miguelmartin@gmail.com')],
     [new Telefono('movil',687988432)],
     ['Hermano'],
 );
@@ -28,7 +28,7 @@ const persona2: Persona = new Persona (
     'Amarillo',
     'femenino',
     [new Direccion('calle',2,6,'C',50013,'camino de la torres','Zaragoza')],
-    [new Mail('Lauralavega@gmail.com','persona2')],
+    [new Mail(TipoMail.outlook,'Lauralavega@outlook.com')],
     [new Telefono('movil',682094238)],
     ['Hermana'],
 );
@@ -42,7 +42,7 @@ const persona3: Persona = new Persona (
     'Negro',
     'femenino',
     [new Direccion('calle',23,3,'A',50002,'Miguel Servet','Zaragoza')],
-    [new Mail('SilviaMartin@gmail.com','persona3')],
+    [new Mail(TipoMail.hotmail,'SilviaMartin@hotmail.com')],
     [new Telefono('fijo',982094238)],
     ['Sin notas'],
 );
@@ -53,7 +53,7 @@ let personas = [persona1, persona2, persona3];
 personas.forEach(element => {
     if(element.dni == '34546787B'){
         element.addDireccion(new Direccion('calle',2,6,'C',50013,'camino de la torres','Zaragoza'));
-        element.addMail(new Mail('nombreApellido@gmail.com ', 'nombreApellido'));
+        element.addMail(new Mail(TipoMail.gmail,'nombreApellido@gmail.com'));
         element.addTlfno(new Telefono('movil', 623456790));
     }
 });

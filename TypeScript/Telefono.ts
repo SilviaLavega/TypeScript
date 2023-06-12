@@ -3,10 +3,10 @@
 export class Telefono {
     //Declaracion de variables
     private _Tipo: String;
-    private _Numero: String;
+    private _Numero: number;
 
     //Constructor de la clase
-    constructor(Tipo, Numero) {
+    constructor(Tipo:String, Numero:number) {
         this._Numero = Numero;
         this._Tipo = Tipo;
     }
@@ -19,10 +19,10 @@ export class Telefono {
         this._Tipo = value;
     }
    
-    public get Numero(): String {
+    public get Numero(): number {
         return this._Numero;
     }
-    public set Numero(value: String) {
+    public set Numero(value: number) {
         this._Numero = value;
     }       
 
